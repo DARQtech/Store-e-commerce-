@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "email": "cp .env ./node_modules/react-email && email dev --dir src/email --port 3001"
+    "email": "cp .env ./node_modules/react-email && email dev --dir src/email --port 3001",
+    "webhook":"stripe listen --forward-to https://e-commerce-official.vercel.app/webhooks/stripe"
   },
   "dependencies": {
     "@prisma/client": "^5.10.2",
